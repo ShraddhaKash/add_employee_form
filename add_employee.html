@@ -1,0 +1,55 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="employee.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <p class="welcome">add employee</p>
+    <div id="main">
+        <form id="confirmationForm" name="myform-2" >
+            <div class="inner-div-1">
+                <input type="text" name="fname" id="fname" placeholder="FIRST NAME" required>
+                <input type="text" name="lname" id="lname" placeholder="LAST NAME" required>
+                <div>
+                    <input type="email" name="email" id="email" placeholder="EMAIL ID"  required>
+                    <p class="description">ENTER VALID EMAIL ADDRESS</p>
+                </div>
+                <div>
+                    <input type="phone" name="phone" id="phone" placeholder="PHONE NO" minlength="10" maxlength="10" required>
+                    <p class="description">ENTER VALID Phone number</p>
+                </div>
+                <select id="domain" name="domain"  required>
+                    <option>DOMAIN</option>
+                    <option value="Testing">Testing</option>
+                    <option value="Development">Development</option>
+                    <option value="Operations">Operations</option>
+                    <option value="Accounts">Accounts</option>
+                </select>
+            </div>
+            <div class="inner-div-2">
+                <button type="reset" class="dis" onclick="event.preventDefault(); confirmReset();">DISCARD</button>
+                <button type="submit" id="submitbtn" onclick="event.preventDefault(); confirmSubmit();">SUBMIT</button>
+            </div>
+        </form>
+    </div>
+    <div id="dialogue-box-main">
+        <div class="dialogue-box">
+            <div>
+                <p class="dialogue-p">Are you sure?</p>
+            </div>
+            <div class="dialogue-box-btn">
+                <button id="cancel" class="dialogue-btn" onclick="event.preventDefault(); cancelled()">Cancel</button>
+                <button id="confirm" class="dialogue-btn dis" onclick="event.preventDefault(); confirmed()">confirm</button>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="employee.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,45 @@
+body{
+    background: #2148C0;
+}
+.welcome{
+    width: 300px;
+    color: #FFF;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 20px; /* 100% */
+    text-transform: uppercase;
+    padding-top: 30px;
+}
+.description{
+    color: #F00;
+    width: 300px;
+    font-family: Montserrat;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 20px; /* 166.667% */
+    text-transform: uppercase;
+}
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80%;
+}
+.inner-div{
+    padding-bottom: 15px;
+}
+input,button{
+    width: 300px;
+    height: 43.732px;
+    border-radius: 4px;
+    border: 1px solid #2148C0;
+    background: #FFF;
+    padding: 11px 1px 10px 10px;
+}
+button{
+    font-size: 16px;
+    color: #2148C0;
+}

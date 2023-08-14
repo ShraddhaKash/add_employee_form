@@ -1,0 +1,30 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <p class="welcome">WELCOME</p>
+    <div class="main">
+        <form action="add_employee.html" name="myform">
+            <div class="inner-div">
+                <input type="email" name="email" id="email" placeholder="USER ID" required>
+                <p class="description">ENTER VALID EMAIL ADDRESS</p>
+            </div>
+            <div class="inner-div">
+                <input type="password" name="pass" id="pass" placeholder="PASSWORD" pattern="^(?=.{8,16}$)(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*\W).*$" required >
+                <p class="description">8-16 characters , 1 Special Character, 1 Uppercase, 1 Lowercase, 1 number</p>
+            </div>
+
+            <button type="submit">LOGIN</button>
+        </form>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
